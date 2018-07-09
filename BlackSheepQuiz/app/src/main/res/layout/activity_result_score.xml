@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.blacksheepquiz.ResultScoreActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_menu_01"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal|center_vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:src="@drawable/text_menu_yourscore"/>
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="0"
+            android:gravity="center_horizontal"
+            android:textSize="60dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:gravity="center_horizontal|center_vertical"
+            android:weightSum="4">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:src="@drawable/text_menu_easyrecord"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:id="@+id/easyResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:textSize="20dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:src="@drawable/text_menu_hardrecord"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:id="@+id/hardResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:gravity="center_horizontal|center_vertical"
+            android:weightSum="2">
+
+
+            <com.dd.morphingbutton.MorphingButton
+                android:id="@+id/playAgain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/retry"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"/>
+
+            <com.dd.morphingbutton.MorphingButton
+                android:id="@+id/comeMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/backMenu"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Black Sheep Quiz</string>
+    <string name="timeCount"></string>
+    <string name="scoreGame">0</string>
+    <string name="retry">Retry</string>
+    <string name="backMenu">Back To Menu</string>
+</resources>

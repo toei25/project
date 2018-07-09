@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.blacksheepquiz.MenuActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_menu_01"/>
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="8"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/titleGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/text_menu_blacksheep"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="7"
+            android:weightSum="6"
+            android:gravity="center_horizontal">
+            <ImageButton
+                android:id="@+id/btnCampaign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/btn_campaign"
+                android:background="@android:color/transparent"/>
+
+            <ImageButton
+                android:id="@+id/btnTimeAttack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/btn_timeattack"
+                android:background="@android:color/transparent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"/>
+
+            <ImageButton
+                android:id="@+id/btnHowTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/btn_howto"
+                android:background="@android:color/transparent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"/>
+
+            <ImageButton
+                android:id="@+id/btnExit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/btn_exit"
+                android:background="@android:color/transparent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"></View>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
